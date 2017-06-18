@@ -1,0 +1,199 @@
+
+
+@font-face {
+  font-family: 'myFirstFont';
+  src: url('../ttf/Function Bold.ttf');
+  /*font-weight: bold;*/
+}
+
+@font-face {
+  font-family: 'Greenscr';
+  src: /*local("Courier"),*/
+       /*local("HelveticaNeue-Bold"),*/
+       url('../ttf/Greenscr.ttf');
+  /*font-weight: bold;*/
+}
+
+body, html {
+  margin: 0px;
+  overflow:hidden;
+}
+
+.container{
+    color: #1b1e82;
+    /*font-style: Greenscr;*/
+    font-size: 200px;
+    line-height: 10px;
+    font-family: 'myFirstFont';
+    height: 100vh;
+    width: 100vw;
+    background:#efc3b6;
+    /*background-color: red;*/
+}
+/*
+.one div{-webkit-animation: mymove 5s infinite;
+    animation: mymove 2s ;}
+*/
+.choose {
+
+    top:60vh;
+    /*height: 23vh;*/
+    width: 100vw;
+    background:#efc3b6;
+    /*background-color: green;*/
+    position: absolute;
+    text-align: center;
+    font-size: 0.2em;
+    transform: translateY(-50%);
+
+
+
+/*       display: none;
+*/
+}
+/*
+.one div{-webkit-animation: mymove 5s infinite;
+    animation: mymove 2s ;}
+*/
+
+
+.inner {
+	text-align: center;
+
+    position: relative;
+    top: 40vh;
+    transform: translateY(-50%);
+    left:5%;
+    /*height:2;*/
+    /*transform: translateX()(-50%);*/
+    /*font-family: courier;*/
+
+    /*background-color: red;*/
+    width: 90%;
+
+}
+
+#numberIDhi {
+    font-size: 0.1em;
+    color: white;
+
+
+}
+
+.button1 {
+    background-color: #efc3b6; /* Green */
+    color: #1b1e82;
+    border: solid 5px;
+    /*color: white;*/
+    padding: 15px 32px;
+    text-align: center;
+    /*text-decoration: none;*/
+    display: inline-block;
+    font-size: 36px ;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+        /*border-radius: 8px;*/
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    font-family: 'myFirstFont';
+
+
+}
+
+.button1:focus {
+    outline:0;
+}
+
+.textf {
+    background-color:rgba(0, 0, 0, 0);
+    color:white;
+    border: 5px solid;
+    border-color: #1b1e82;
+        text-align: center;
+
+    outline:none;
+    /*height:0.2em;*/
+    font-family: 'myFirstFont';
+    font-size:1em;
+    width:80px;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+
+/*    transition:height 1s;
+    -webkit-transition:height 1s;
+*/
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.textf:focus {
+    /*height:50px;*/
+    /*font-size:1em;*/
+    /*font-size:16px;*/
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/*.textf::selection*/
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+
+}
+
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 555px; /* Specific width is required for Firefox. */
+  background: #1b1e82; /* Otherwise white in Chrome */
+  outline: none;
+  margin: 45px 0;
+  transition-duration: 0.5s;
+
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 5px solid #1b1e82;
+  height: 50px;
+  width: 20px;
+  /*border-radius: 3px;*/
+  background: #efc3b6;
+  cursor: pointer;
+  margin-top: -19px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */*/
+  transition-duration: 0.5s;
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+  background: #1b1e82; /* Otherwise white in Chrome */
+  /*border-radius: 1.3px;*/
+  /*border: 0.2px solid #010101;*/
+  transition-duration: 0.5s;
+
+}
+
+.highlight{
+
+    background-color: red;
+}
